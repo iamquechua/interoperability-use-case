@@ -1,17 +1,55 @@
 <h2>GovPension</h2>
 
 
-<p>Welcome to GovPension, the government pension system. Please find the list of citizens</p>
+
+
+<p>Welcome to GovPension, the government pension system. Please find the list of citizens and their total tax contribution</p>
+
+
 
 
 {% if citizens %}
-   <ul>
+<table>
+   <thead>
+       <tr>
+           <th>First Name</th>
+           <th>Last Name</th>
+           <th>Total Tax Contribution</th>
+           <th>Yearly Pension Allowance</th>
+       </tr>
+   </thead>
+   <tbody>
        {% for citizen in citizens %}
-           <li>
-               {{citizen.first_name}} {{citizen.last_name}}
-           </li>
+       <tr>
+           <td>{{citizen.first_name}}</td>
+           <td>{{citizen.last_name}}</td>
+           <td>
+               {% if citizen.taxpayer_profile %}
+                   {{citizen.taxpayer_profile.total_tax_contribution}}
+               {% else %}
+                   N/A
+               {% endif %}
+           </td>
+           <td>
+               {% if citizen.retiree_profile %}
+                   {{citizen.retiree_profile.yearly_pension_allowance}}
+               {% else %}
+                   N/A
+               {% endif %}
+              
+           </td>
+       </tr>
        {% endfor %}
-   </ul>
+   </tbody>
+</table>
 {% else %}
-   <p>No citizens found. Load the citizens by <a href="{% url 'load_citizens' %}">clicking here</a>. </p>
+  <p>No citizens found. Load the citizens by <a href="{% url 'load_citizens' %}">clicking here</a>. </p>
 {% endif %}
+
+
+{% if not taxpayers %}
+   <a href="{% url 'load_taxpayers' %}">Load taxpayers</a>.
+{% else %}
+   <a href="{% url 'create_retiree_profiles' %}">Create retiree profiles</a>.
+{% endif %}
+
