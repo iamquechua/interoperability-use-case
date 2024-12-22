@@ -3,3 +3,9 @@ Django==5.1.4
 
 # Django REST Framework -> https://www.django-rest-framework.org
 djangorestframework==3.14.0
+
+# drf-yasg -> https://github.com/axnsan12/drf-yasg
+drf-yasg==1.21.7
+
+# setuptools https://pypi.org/project/setuptools/
+setuptools==75.6.0
