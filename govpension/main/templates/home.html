@@ -1,0 +1,17 @@
+<h2>GovPension</h2>
+
+
+<p>Welcome to GovPension, the government pension system. Please find the list of citizens</p>
+
+
+{% if citizens %}
+   <ul>
+       {% for citizen in citizens %}
+           <li>
+               {{citizen.first_name}} {{citizen.last_name}}
+           </li>
+       {% endfor %}
+   </ul>
+{% else %}
+   <p>No citizens found. Load the citizens by <a href="{% url 'load_citizens' %}">clicking here</a>. </p>
+{% endif %}

@@ -23,7 +23,7 @@ class Citizen(models.Model):
 
 
 
-class TaxPayerProfile(models.Model):
+class TaxpayerProfile(models.Model):
    citizen = models.OneToOneField(Citizen, on_delete=models.CASCADE, related_name='taxpayer_profile'
 )
    total_tax_contribution = models.DecimalField(max_digits=10, decimal_places=2)
