@@ -1,7 +1,11 @@
 from django.contrib import admin
-from .models import Taxpayer
+from .models import Citizen, TaxPayerProfile
 
 
-@admin.register(Taxpayer)
-class TaxpayerAdmin(admin.ModelAdmin):
+@admin.register(Citizen)
+class CitizenAdmin(admin.ModelAdmin):
+   pass
+
+@admin.register(TaxPayerProfile)
+class TaxPayerProfileAdmin(admin.ModelAdmin):
    pass
