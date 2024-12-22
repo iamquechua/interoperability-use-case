@@ -7,5 +7,6 @@ djangorestframework==3.14.0
 # drf-yasg -> https://github.com/axnsan12/drf-yasg
 drf-yasg==1.21.7
 
-# setuptools https://pypi.org/project/setuptools/
-setuptools==75.6.0
+# new
+# setuptools https://pypi.org/project/setuptools/ 
+setuptools==75.6.0 
