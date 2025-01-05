@@ -2,7 +2,6 @@ from django.db import models
 
 
 
-
 class Citizen(models.Model):
    GENDER_CHOICES = [
        ('Female', 'Female'),

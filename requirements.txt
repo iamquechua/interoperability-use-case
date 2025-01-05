@@ -7,9 +7,14 @@ djangorestframework==3.14.0
 # drf-yasg -> https://github.com/axnsan12/drf-yasg
 drf-yasg==1.21.7
 
+# mozilla-django-oidc -> https://github.com/mozilla/mozilla-django-oidc
+mozilla-django-oidc==4.0.1
+
 # requests -> https://pypi.org/project/requests/
 requests==2.32.3
 
-# setuptools https://pypi.org/project/setuptools/ 
-setuptools==75.6.0 
+# setuptools https://pypi.org/project/setuptools/
+setuptools==75.6.0
 
+# Python-PostgreSQL -> http://initd.org/psycopg
+psycopg2-binary==2.9.9

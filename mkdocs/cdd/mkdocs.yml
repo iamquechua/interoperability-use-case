@@ -1,0 +1,10 @@
+site_name: Common Data Dictionary
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - Classes:
+      - Citizen: classes/citizen.md
+      - TaxpayerProfile: classes/taxpayer_profile.md
+      - RetireeProfile: classes/retiree_profile.md
