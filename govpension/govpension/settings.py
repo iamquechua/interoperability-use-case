@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-jbr=x0-3j!a=8&=id_jnorp)c4&z#^_$9sj1!q6jotq#4tpxsm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'host.docker.internal']
 
 
 # Application definition
@@ -142,3 +142,9 @@ OIDC_RP_SIGN_ALGO = 'RS256'
 LOGIN_URL = 'oidc_authentication_init'
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
+
+REST_FRAMEWORK = {
+   'DEFAULT_PERMISSION_CLASSES': [
+       'main.permissions.IsAccessedThroughKong',
+   ],
+}

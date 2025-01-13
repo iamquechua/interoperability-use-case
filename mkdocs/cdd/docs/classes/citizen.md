@@ -6,14 +6,14 @@ The `Citizen` model represents individuals with unique identification numbers an
 
 | Field Name     | Type          | Description                                                                 |
 |----------------|---------------|-----------------------------------------------------------------------------|
-| `citizen_number` | `CharField`  | A unique, auto-generated ID for the citizen. Not editable by users.         |
-| `first_name`     | `CharField`  | The first name of the citizen.                                              |
+| `numero_citoyen` | `CharField`  | A unique, auto-generated ID for the citizen. Not editable by users.         |
+| `prenom`     | `CharField`  | The first name of the citizen.                                              |
 | `middle_name`    | `CharField`  | The middle name of the citizen. Optional.                                   |
-| `last_name`      | `CharField`  | The last name of the citizen.                                               |
-| `date_of_birth`  | `DateField`  | The citizen's date of birth.                                                |
-| `gender`         | `CharField`  | The gender of the citizen. Choices are: `Female` or `Male`.                |
-| `phone_number`   | `CharField`  | The phone number of the citizen.                                            |
-| `address`        | `CharField`  | The residential address of the citizen.                                     |
+| `nom_de_famille`      | `CharField`  | The last name of the citizen.                                               |
+| `date_de_naissance`  | `DateField`  | The citizen's date of birth.                                                |
+| `sexe`         | `CharField`  | The gender of the citizen. Choices are: `Female` or `Male`.                |
+| `numero_de_telephone`   | `CharField`  | The phone number of the citizen.                                            |
+| `adresse`        | `CharField`  | The residential address of the citizen.                                     |
 
 ## Methods
 
