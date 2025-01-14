@@ -1,0 +1,10 @@
+site_name: Refentiel de Donnees
+theme:
+  name: material
+
+nav:
+  - Accueil: index.md
+  - Données:
+      - Citoyen: classes/citizen.md
+      - TaxpayerProfile: classes/taxpayer_profile.md
+      - RetireeProfile: classes/retiree_profile.md

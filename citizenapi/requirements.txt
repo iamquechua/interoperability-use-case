@@ -1,0 +1,14 @@
+# Django framework -> https://www.djangoproject.com
+Django==5.0
+
+# Django REST Framework -> https://www.django-rest-framework.org
+djangorestframework==3.14.0
+
+# drf-yasg -> https://github.com/axnsan12/drf-yasg
+drf-yasg==1.21.7
+
+# requests -> https://pypi.org/project/requests/
+requests==2.32.3
+
+# Python-PostgreSQL -> http://initd.org/psycopg
+psycopg2-binary==2.9.9

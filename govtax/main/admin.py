@@ -1,7 +1,14 @@
 from django.contrib import admin
-from .models import Taxpayer
+from .models import Citizen, TaxpayerProfile
 
 
-@admin.register(Taxpayer)
-class TaxpayerAdmin(admin.ModelAdmin):
-   pass
+
+
+@admin.register(Citizen)
+class CitizenAdmin(admin.ModelAdmin):
+  pass
+
+
+@admin.register(TaxpayerProfile)
+class TaxpayerProfileAdmin(admin.ModelAdmin):
+  list_display = ('citizen', 'total_tax_contribution',) # new
