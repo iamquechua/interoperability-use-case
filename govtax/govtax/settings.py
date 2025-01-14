@@ -126,20 +126,20 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-# AUTHENTICATION_BACKENDS = (
-#    'mozilla_django_oidc.auth.OIDCAuthenticationBackend',
-# )
+AUTHENTICATION_BACKENDS = (
+   'mozilla_django_oidc.auth.OIDCAuthenticationBackend',
+)
 
-# OIDC_RP_CLIENT_ID = 'govtax'
-# OIDC_RP_CLIENT_SECRET = 'a9DT5mA9Oe92ykZClTR0bvP6k2g1PVJ1'
-# OIDC_OP_AUTHORIZATION_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/auth'
-# OIDC_OP_TOKEN_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/token'
-# OIDC_OP_USER_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/userinfo'
-# OIDC_OP_JWKS_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/certs'
-# OIDC_RP_SIGN_ALGO = 'RS256'
+OIDC_RP_CLIENT_ID = 'govtax'
+OIDC_RP_CLIENT_SECRET = 'a9DT5mA9Oe92ykZClTR0bvP6k2g1PVJ1'
+OIDC_OP_AUTHORIZATION_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/auth'
+OIDC_OP_TOKEN_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/token'
+OIDC_OP_USER_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/userinfo'
+OIDC_OP_JWKS_ENDPOINT = 'http://localhost:8080/realms/demo/protocol/openid-connect/certs'
+OIDC_RP_SIGN_ALGO = 'RS256'
 
 
-# LOGIN_URL = 'oidc_authentication_init'
+LOGIN_URL = 'oidc_authentication_init'
 LOGOUT_REDIRECT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 
